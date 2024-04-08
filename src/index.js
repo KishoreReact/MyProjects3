@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import backgroundImage from './components/images/background/background.jpg';
+import './App.css'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div 
+    //className="background-container"
+    >
+    <div className="background-image" style={{backgroundImage: `url(${backgroundImage})`}}></div>
     <App />
+    </div>
   </React.StrictMode>
 );
 

@@ -1,0 +1,64 @@
+.carousel-item {
+    display: inline-block; /* Display items in a row */
+    width: 33.33%; /* Adjust width as needed */
+  }
+  
+  .carousel-inner {
+    display: flex; /* Ensure items are flex items */
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+  }
+  
+  .card {
+    margin: 30px; /* Add margin to push the card down */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 230%;
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for buttons */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 1;
+  }
+  
+  .carousel button:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+  }
+  
+  .carousel .prev {
+    left: 0;
+  }
+  
+  .carousel .next {
+    right: 0;
+  }
+  

@@ -1,0 +1,22 @@
+.ecommerce-home-page{
+  position: relative;
+}
+  
+  .row {
+    display: flex; /* Use flexbox */
+  }
+  
+  .left-side,
+  .right-side {
+    flex: 1; /* Make both columns take equal space */
+  }
+  
+  /* Adjust width or add any other styles as needed */
+  .left-side {
+    /* Add styles for left column */
+  }
+  
+  .right-side {
+    /* Add styles for right column */
+  }
+  
